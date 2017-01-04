@@ -5,23 +5,22 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
+       
     </head>
     <body>
-       <div class="container">
-            <h1>Pomodoro Clock</h1>
-           
-           
-            <div class='timer' data-minutes-left=3> 3:00
-            </div>
+    
+        <div id="time"></div>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <button id="resume">resume</button>
 
 
+    <div id="input_div">
+    <input type="text" size="25" value="1" id="count">
+    <input type="button" value="-" id="moins" onclick="minus()">
+    <input type="button" value="+" id="plus" onclick="plus()">
+</div>
 
-       </div>
-
-
-
-    <script src="scripts/jquery.js"></script>
-    <script src="scripts/jquery.simple.timer.js"></script>
     <script src="scripts/main.js"></script>
     </body>
 </html>
